@@ -28,16 +28,15 @@ class _QuizState extends State<Quiz> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Container(
-            decoration: const BoxDecoration(
-                gradient: LinearGradient(
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [Colors.blue, Colors.purple],
-            )),
-            child: activeScreen,
+            ),
           ),
+          child: activeScreen,
         ),
       ),
     );
